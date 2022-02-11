@@ -7,6 +7,7 @@ form.addEventListener('submit', event => {
 		form.children[1].firstElementChild.value === ''
 	) {
 		alert('no empty fields allowed');
+		form.reset();
 		return;
 	}
 	const formData = new FormData(event.currentTarget);
